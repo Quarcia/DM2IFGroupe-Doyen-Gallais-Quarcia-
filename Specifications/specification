@@ -1,0 +1,76 @@
+
+
+M2 IF Apprentissage projet composants
+
+
+
+
+
+
+Spécifications composant 3
+
+
+Groupe 2
+Etienne Doyen  Etudiant1
+Thibaut Gallais Etudiant2
+Anthony Quarcia Etudiant3
+
+
+
+
+Version doc	Date	Auteur(s)	Modifications
+1.0	21/02/2015	Anthony Quarcia	Version initiale
+1.1	23/02/2015	Thibaut Gallais	Précisions sur l’état interne
+			
+			
+			
+			
+			
+			
+			
+
+ 
+
+
+
+1	Fonction du composant
+
+Le composant GNA devra générer un vecteur de nombres aléatoires suivant une loi normale. Un appel de la fonction génère un vecteur.
+Il existe plusieurs méthodes pour générer une série de nombres aléatoires suivant une loi normale. Cependant, dans notre cas, la méthode semble être la méthode de Box-Muller.
+Cette méthode fonctionne en deux temps :
+1.	Générer des nombres aléatoires de loi uniforme (fonction rand)
+
+double uniformRandom()
+{
+  return ((double)(rand()) + 1. )/( (double)(RAND_MAX) + 1.);
+}
+2.	A partir de ces nombres, générer des nombres aléatoires à distribution normale centrée réduite
+
+double normalRandom(int moy,int var)
+{
+  double u1=uniformRandom();
+  double u2=uniformRandom();
+  return moy+var*cos(8.*atan(1.)*u2)*sqrt(-2.*log(u1));
+}
+
+La loi normale sera de  variance 1 et de moyenne 0. N(0,1)
+
+Les vecteurs doivent être différents à chaque demande et non corrélés. Pour s’en assurer, il faut être en mesure de récupérer l’état interne de la fonction rand. En effet, le premier nombre aléatoire du vecteur n+1 sera généré à partir de l’état interne ayant permis de générer le dernier nombre du vecteur n.
+
+Par ailleurs, à des fins de test, on doit pouvoir générer un même vecteur plusieurs fois (voir même une suite de vecteur). Il faut donc être en mesure de connaitre l’état interne initiale permettant de générer un vecteur défini (ou une suite de vecteur).
+
+2	Entrée
+
+Seule la taille n du vecteur est passée en paramètre (a priori 504 jours).
+
+3	Sortie
+
+La fonction renvoie un vecteur de taille n de nombres aléatoires (float) suivant une loi normale.
+
+4	Cas d’erreur
+
+Générer un vecteur de grande taille afin de vérifier que la variance s’approche de 1 et la moyenne de 0. (Loi des grands nombres)
+
+Calcul d’écart entre la répartition des nombres générés et la fonction de répartition de la loi normale.
+	
+  	Avec μ moyenne et σ écart type
