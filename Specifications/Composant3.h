@@ -9,5 +9,6 @@
 COMPOSANT3_INTERFACE double composant3(double p1, double p2);
 COMPOSANT3_INTERFACE char * getComposant3Version();
 COMPOSANT3_INTERFACE double uniformRandom();
+COMPOSANT3_INTERFACE void initialize();
 COMPOSANT3_INTERFACE double normalRandom();
 #endif
