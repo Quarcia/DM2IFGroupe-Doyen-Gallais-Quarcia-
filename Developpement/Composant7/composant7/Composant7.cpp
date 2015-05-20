@@ -23,7 +23,7 @@ return "Composant 7 version " COMPOSANT_VERSION_STR;
 double pricePath(string typePayoff, double path[], double strike, double maturity){
 	Payoff p = Payoff();
 	if(typePayoff=="Call"){
-		double date = p.getDate(maturity);
+		int date = p.getDate(maturity);
 		return p.getPrice(date, strike, path);
 	}
 }

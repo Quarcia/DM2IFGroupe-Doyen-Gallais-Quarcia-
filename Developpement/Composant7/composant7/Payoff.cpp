@@ -1,15 +1,17 @@
 #include "stdafx.h"
 #include "Payoff.h"
+#include <iostream>
 #pragma once
+
+using namespace std;
 
 Payoff::Payoff(){}
 
-double Payoff::getDate(double maturity){
-	return 540.0;
+int Payoff::getDate(double maturity){
+	return 504;
 }
 
 // Payoff d'une option européenne
-double Payoff::getPrice(double date, double strike, double path[]){
-	int lastCursor = (sizeof(path)/sizeof(*path)) - 1;
-	return max(path[lastCursor] - strike, 0);
+double Payoff::getPrice(int date, double strike, double path[]){
+	return max(path[date-1] - strike, 0);
 }

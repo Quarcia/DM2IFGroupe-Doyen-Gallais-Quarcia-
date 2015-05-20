@@ -4,6 +4,6 @@ class Payoff{
 
 public:
 	Payoff();
-	double getDate(double);
-	double getPrice(double, double, double[]);
+	int getDate(double);
+	double getPrice(int, double, double[]);
 };
