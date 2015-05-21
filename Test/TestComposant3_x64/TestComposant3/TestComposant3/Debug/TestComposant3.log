@@ -1,0 +1,40 @@
+﻿Build started 21/05/2015 14:08:06.
+     1>Project "C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Test\TestComposant3\TestComposant3\TestComposant3.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\TestComposant3.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Composant3.cpp Test3.cpp
+         Test3.cpp
+         Composant3.cpp
+     1>c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.cpp(9): warning C4273: 'composant3' : inconsistent dll linkage
+                 c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.h(10) : see previous definition of 'composant3'
+     1>c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.cpp(13): warning C4273: 'getComposant3Version' : inconsistent dll linkage
+                 c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.h(11) : see previous definition of 'getComposant3Version'
+     1>c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.cpp(17): warning C4273: 'uniformRandom' : inconsistent dll linkage
+                 c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.h(13) : see previous definition of 'uniformRandom'
+     1>c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.cpp(21): warning C4273: 'initialize' : inconsistent dll linkage
+                 c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.h(15) : see previous definition of 'initialize'
+     1>c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.cpp(22): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.cpp(25): warning C4273: 'normalRandom' : inconsistent dll linkage
+                 c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.h(17) : see previous definition of 'normalRandom'
+     1>c:\users\isen\documents\github\dm2ifgroupe-doyen-gallais-quarcia-\test\testcomposant3\testcomposant3\composant3.cpp(31): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Test\TestComposant3\Debug\TestComposant3.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\TestComposant3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Test\TestComposant3\Debug\TestComposant3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Test\TestComposant3\Debug\TestComposant3.lib" /MACHINE:X86 Debug\Composant3.obj
+         Debug\Test3.obj
+         LINK : C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Test\TestComposant3\Debug\TestComposant3.exe not found or not built by the last incremental link; performing full link
+            Creating library C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Test\TestComposant3\Debug\TestComposant3.lib and object C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Test\TestComposant3\Debug\TestComposant3.exp
+     1>Test3.obj : warning LNK4217: locally defined symbol ?normalRandom@@YA?AV?$vector@MV?$allocator@M@std@@@std@@H@Z (class std::vector<float,class std::allocator<float> > __cdecl normalRandom(int)) imported in function _main
+     1>Test3.obj : warning LNK4217: locally defined symbol ?getComposant3Version@@YAPADXZ (char * __cdecl getComposant3Version(void)) imported in function _main
+     1>Test3.obj : warning LNK4217: locally defined symbol ?composant3@@YANNN@Z (double __cdecl composant3(double,double)) imported in function _main
+         TestComposant3.vcxproj -> C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Test\TestComposant3\Debug\TestComposant3.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Test\TestComposant3\Debug\TestComposant3.exe;#1" /manifest Debug\TestComposant3.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\TestComposant3.unsuccessfulbuild".
+         Touching "Debug\TestComposant3.lastbuildstate".
+     1>Done Building Project "C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Test\TestComposant3\TestComposant3\TestComposant3.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.96
