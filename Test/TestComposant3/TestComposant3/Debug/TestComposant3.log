@@ -1,0 +1,25 @@
+﻿La génération a démarré 20/05/2015 17:18:26.
+     1>Projet "c:\Users\lambda\documents\visual studio 2010\Projects\TestComposant3\TestComposant3\TestComposant3.vcxproj" sur le nœud 2 (build cible(s)).
+     1>InitializeBuildStatus:
+         Création de "Debug\TestComposant3.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       ClCompile:
+         Toutes les sorties sont à jour.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\lambda\documents\visual studio 2010\Projects\TestComposant3\Debug\TestComposant3.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\TestComposant3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\lambda\documents\visual studio 2010\Projects\TestComposant3\Debug\TestComposant3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\lambda\documents\visual studio 2010\Projects\TestComposant3\Debug\TestComposant3.lib" /MACHINE:X86 Debug\Composant3.obj
+         Debug\Test3.obj
+         LINK : c:\users\lambda\documents\visual studio 2010\Projects\TestComposant3\Debug\TestComposant3.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
+            Création de la bibliothèque c:\users\lambda\documents\visual studio 2010\Projects\TestComposant3\Debug\TestComposant3.lib et de l'objet c:\users\lambda\documents\visual studio 2010\Projects\TestComposant3\Debug\TestComposant3.exp
+     1>Test3.obj : warning LNK4217: symbole défini localement ?normalRandom@@YA?AV?$vector@MV?$allocator@M@std@@@std@@H@Z (class std::vector<float,class std::allocator<float> > __cdecl normalRandom(int)) importé dans la fonction _main
+     1>Test3.obj : warning LNK4217: symbole défini localement ?getComposant3Version@@YAPADXZ (char * __cdecl getComposant3Version(void)) importé dans la fonction _main
+     1>Test3.obj : warning LNK4217: symbole défini localement ?composant3@@YANNN@Z (double __cdecl composant3(double,double)) importé dans la fonction _main
+         TestComposant3.vcxproj -> c:\users\lambda\documents\visual studio 2010\Projects\TestComposant3\Debug\TestComposant3.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"c:\users\lambda\documents\visual studio 2010\Projects\TestComposant3\Debug\TestComposant3.exe;#1" /manifest Debug\TestComposant3.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Suppression du fichier "Debug\TestComposant3.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Debug\TestComposant3.lastbuildstate".
+     1>Génération du projet "c:\Users\lambda\documents\visual studio 2010\Projects\TestComposant3\TestComposant3\TestComposant3.vcxproj" terminée (build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:00.29
