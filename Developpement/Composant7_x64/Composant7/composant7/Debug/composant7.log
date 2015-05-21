@@ -1,0 +1,22 @@
+﻿Build started 20/05/2015 15:47:55.
+     1>Project "C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Developpement\Composant7\composant7\composant7.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\composant7.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\composant7.unsuccessfulbuild".
+         Touching "Debug\composant7.lastbuildstate".
+     1>Done Building Project "C:\Users\isen\Documents\GitHub\DM2IFGroupe-Doyen-Gallais-Quarcia-\Developpement\Composant7\composant7\composant7.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.13
